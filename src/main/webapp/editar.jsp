@@ -10,8 +10,12 @@ Produto produto = DaoProduto.consultar(idEdit);
 
 %>
 <body class="bg-light">
+ <jsp:include page="navbar.jsp" />
+
 <div class="container">
-<form action="cadastro.jsp" method="POST">
+<h1 class="text-center">Edição</h1>
+
+<form action="editar.jsp" method="POST">
 <div class="form-group mb-3">
  <label for="descricao">ID</label>
  <input type="text" class="form-control" name="id" id="id" readonly value="<% out.write(""+idEdit); %>"/>

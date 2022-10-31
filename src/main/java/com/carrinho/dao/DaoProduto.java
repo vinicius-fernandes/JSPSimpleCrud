@@ -43,7 +43,7 @@ public class DaoProduto {
             String sql = "update produto set descricao=?,";
             sql += "preco=?,";
             sql += "estoque=?,";
-            sql += "unidadeMedida=?,";
+            sql += "unidadeMedida=?";
             sql += "where id = ?";
             try {
                 PreparedStatement stm = con.prepareStatement(sql);

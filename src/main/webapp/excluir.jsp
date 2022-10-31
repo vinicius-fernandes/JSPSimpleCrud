@@ -10,6 +10,8 @@ Produto produto = DaoProduto.consultar(idExcluir);
 
 %>
 <body class="bg-light">
+ <jsp:include page="navbar.jsp" />
+
 <div class="container">
 <h1>Você realmente deseja excluir o produto abaixo?</h1>
 <form action="excluir.jsp" method="POST">
