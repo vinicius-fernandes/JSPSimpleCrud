@@ -1,0 +1,3 @@
+com\carrinho\dao\DaoProduto.class
+com\carrinho\utils\Conexao.class
+com\carrinho\entidades\Produto.class
