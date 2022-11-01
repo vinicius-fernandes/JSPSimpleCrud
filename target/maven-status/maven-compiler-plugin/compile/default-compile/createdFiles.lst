@@ -1,3 +1,5 @@
 com\carrinho\dao\DaoProduto.class
-com\carrinho\utils\Conexao.class
+com\carrinho\dao\DaoCarrinho.class
 com\carrinho\entidades\Produto.class
+com\carrinho\entidades\Carrinho.class
+com\carrinho\utils\Conexao.class

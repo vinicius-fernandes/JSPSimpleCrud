@@ -35,6 +35,12 @@ public class DaoProduto {
         }
         return "erro de conexão";
     }
+
+
+    public static float getEstoqueProduto(int id){
+        return consultar(id).getPreco();
+    }
+
     public static String editar(Produto produto,int id){
 
         Connection con = Conexao.conectar();
@@ -104,7 +110,7 @@ public class DaoProduto {
             PreparedStatement stm = con.prepareStatement("select * from produto where id = ?");
             stm.setInt(1,id);
             ResultSet rs = stm.executeQuery();
-            while(rs.next()){
+            if(rs.next()){
                 prod = new Produto(rs.getString("descricao"),rs.getFloat("preco"),rs.getFloat("estoque"),rs.getString("unidadeMedida"));
                 prod.setId(id);
             }

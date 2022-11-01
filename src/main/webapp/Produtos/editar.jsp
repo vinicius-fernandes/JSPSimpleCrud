@@ -10,7 +10,7 @@ Produto produto = DaoProduto.consultar(idEdit);
 
 %>
 <body class="bg-light">
- <jsp:include page="navbar.jsp" />
+ <jsp:include page="../Layout/navbar.jsp" />
 
 <div class="container">
 <h1 class="text-center">Edição</h1>
@@ -37,6 +37,7 @@ Produto produto = DaoProduto.consultar(idEdit);
 <div class="form-group mb-3">
 
   <label for="unidadeMedida">Unidade de medida</label>
+
  <input type="text" class="form-control" name="unidadeMedida" id="unidadeMedida" value="<% out.write(produto.getUnidadeMedida()); %>"/>
  </div>
  <button class="btn btn-success mt-4">Salvar</button>
